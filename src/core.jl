@@ -32,7 +32,7 @@ Base.@kwdef struct SigMFGlobal
     license::Union{String, Nothing} = nothing
     hw::Union{String, Nothing} = nothing
     dataset::Union{String, Nothing} = nothing
-    trailing_bytes::Union{String, Nothing} = nothing
+    trailing_bytes::Union{UInt64, Nothing} = nothing
     metadata_only::Union{Bool, Nothing} = nothing
     geolocation::Union{String, Nothing} = nothing # TODO: GEOJSON
     extensions::Union{Vector{SigMFExtension}, Nothing} = nothing
